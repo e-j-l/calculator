@@ -60,9 +60,17 @@ public class Calculator {
             System.out.println("Product: " + result);
 
         }   else if(choice.equals("div")){
-            // division operation
-            result = number1 / number2;
-            System.out.println("Quotient: " + result);
+            
+            if(number2 == 0){
+                System.out.print("Error: Divided By Zero ");
+                
+            }   else {
+
+                // division operation
+                result = number1 / number2;
+                System.out.println("Quotient: " + result);
+
+            }
 
         }   else{
             // added line for unexpected user inputs
