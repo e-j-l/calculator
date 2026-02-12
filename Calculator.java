@@ -11,6 +11,16 @@ public class Calculator {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
+        // attempting to add floating point number 1
+        System.out.print("Enter your first number: \n~ ");
+        float number1 = scanner.nextFloat();
+
+        // attempting to add floating point number 2
+        System.out.print("Enter your first number: \n~ ");
+        float number2 = scanner.nextFloat();
+
+        /* This was original calculator for int variables
+
         // asks and stores first number
         System.out.print("Enter the first whole number: \n~ ");
         int num1 = scanner.nextInt();
@@ -18,6 +28,7 @@ public class Calculator {
         // asks and stores second number
         System.out.print("Enter the second whole number: \n~ ");
         int num2 = scanner.nextInt();
+        */
 
         // Ask the user to choose addition, subtraction, multiplication and division 
         System.out.print("Type one of the following: \n" +
@@ -30,32 +41,32 @@ public class Calculator {
         String choice = scanner.next();
 
         // creates a place to store the result
-        int result;
+        float result;
 
         // if-else to decide operation
         if(choice.equals("add")){
             // addition operation
-            result = num1 + num2;
-            System.out.println("Result: " + result);
+            result = number1 + number2;
+            System.out.println("Sum: " + result);
 
         }   else if(choice.equals("sub")){
             // subtraction operation
-            result = num1 - num2;
-            System.out.println("Result: " + result);
+            result = number1 - number2;
+            System.out.println("Difference: " + result);
 
         }   else if(choice.equals("multi")){
             // multiplication operation
-            result = num1 * num2;
-            System.out.println("Result: " + result);
+            result = number1 * number2;
+            System.out.println("Product: " + result);
 
         }   else if(choice.equals("div")){
             // division operation
-            result = num1 / num2;
-            System.out.println("Result: " + result);
+            result = number1 / number2;
+            System.out.println("Quotient: " + result);
 
         }   else{
             // added line for unexpected user inputs
-            System.out.println("Error: not an operation option");
+            System.out.println("Error: input unknown");
 
         }
 
