@@ -78,6 +78,8 @@ public class Calculator {
 
         }
 
+        System.out.println("End of Calulations");
+
         scanner.close();
     }
     
